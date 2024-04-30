@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Form</title>
+        <script src="../LoginFormValidation/js/validate.js"></script>
+    </head>
+
+    <style>
+        label{
+            padding-left: 10;
+        }
+        input,textarea,select{
+            margin-left: 10;
+        }
+    </style>
+    <body>
+        <div id="info-table">
+        <table border="3" align="center" >
+        <tr>
+        <td>
+            <h2 style="text-align: center; border: 10;">Login Form</h2>
+        </td>
+        </tr>
+        <tr >
+            <td style="border:none">
+            <form style="padding-top: 30;" method="post" id="information" name = "registerForm">
+            
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="FirstName" id="name">
+            <input type="text" name="name" placeholder="LastName"><br>
+            <label id="lbuser" style="color:red; visibility: hidden;">invalid name/Blank</label>
+            <br><br>
+            <label for="mailid">Email</label>
+            <input type="email" name="mailid" placeholder="Email" id="email">
+            <br><br>
+            <label for="number">Phone Number</label>
+            <input type="number" name="number" placeholder="10-digit number" id="phone">
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="password" id="pwd">
+            <br>
+            <br>
+            <label for="gender" id="gender">Gender</label><br>
+            <input type="radio" name="gender" id="radio1" value="Male">Male<br>
+            <input type="radio" name="gender" id="radio2" value="Female">Female<br>
+            <input type="radio" name="gender" id="radio3" value="Not wish to Disclose">Not wish to Disclose
+            <br>
+            <br>
+            <label for="address" >Address</label><br>
+            <textarea name="address" id="address"></textarea>
+            <br>
+            <br>
+            <label for="dob" >Date of Birth</label><br>
+            <input type="date" name="dob" id="dob">
+            <br>
+            <br>
+            <label for="time" >Time</label><br>
+            <input type="time" name="time" id="time">
+            <br>
+            <br>
+            <label for="lang[]" id="lang">Languages</label><br>
+            <input type="checkbox" name="lang[]" id="lang1" value="Tamil">Tamil<br>
+            <input type="checkbox" name="lang[]" id="lang2" value="English">English<br>
+            <input type="checkbox" name="lang[]" id="lang3" value="French">French<br>
+            <br>
+            <label for="interest" >Select Your field of interest</label><br>
+            <select name="interest" id="interest" multiple>
+                <option id="music">
+                    Music
+                </option>
+                <option id="cycling">
+                    Cycling
+                </option>
+                <option>
+                    Badminton
+                </option>
+            </select>
+            <br><br>
+            <label for="photo" id="photo">Upload your Photo</label><br>
+            <input type="file" name="photo">
+            <br><br>
+            <input type="button" value="submit" onclick="DisplayDetails()" id="btn1" >
+            <input type="button" value="reset" onclick="Reset()">
+
+        </form>
+        </td>
+
+        </tr>
+        </table>
+        </div>
+        <div id="output-table" style="display: none;">
+        <h2 align="center">Output Screen</h2>
+        <table border="2" align="center" class="display" >
+        <tr>
+            <th>SECTION</th>
+            
+            <th colspan="2" width="500">USER DETAILS</th>
+            
+        </tr>
+        <tr>
+            <th>USERNAME</th>
+            <td id="uname"></td>
+        </tr>
+        <tr>
+            <th>EMAIL ID</th>
+            <td id="emailid"></td>
+        </tr>
+        <tr>
+            <th>PASSWORD</th>
+            <td id="password"></td>
+        </tr>
+        <tr>
+            <th>GENDER</th>
+            <td id="gen"></td>
+        </tr>
+        <tr>
+            <th>CURRENT ADDRESS</th>
+            <td id="home-address"> </td>
+        </tr>
+        <tr>
+            <th>DATE OF BIRTH</th>
+            <td id="birth-date"></td>
+        </tr>
+        <tr>
+            <th>TIME</th>
+            <td id="current-time"></td>
+        </tr>
+       
+        <tr>
+            <th>LANGUAGES</th>
+            <td id="languages">
+            </td>
+        </tr>
+        <tr>
+            <th>FIELD OF INTEREST</th>
+            <td id="interest-value">
+            </td>
+        </tr>
+        <tr>
+            <th>UPLOAD YOUR PICTURE </th>
+            <td>
+                <!-- <img src="../Images/WIN_20240322_12_45_36_Pro.jpg" width="150"> -->
+            </td>
+        </tr>
+        <tr>
+            <input type="button" value="Back" onclick="Back()">
+        </tr>
+    </table>
+</div>
+    </body>
+</html>

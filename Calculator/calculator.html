@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="../Calculator/js/calculator.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../Calculator/css/calculator.css">
+</head>
+<body>
+    
+    <div class="calc">
+        <h1>Calculator</h1>
+    <div class="container">
+        <div class="calculator">
+            <div class="input">
+                <input type="text" id="textbox">
+            </div>
+            <div class="row1">
+                <button id="ac" value="AC" onclick="clearData()">AC</button>
+                <button id="de" value="DE" onclick="">DE</button>
+                <button id="dot" value="." onclick="Display('.')">.</button> 
+                <button id="divide" value="/" onclick="Display('/')">/</button>
+            </div>
+            <div class="row2">
+                <button id="seven" value="7" onclick="Display('7')">7</button>
+                <button id="eight" value="8" onclick="Display('8')">8</button>
+                <button id="nine" value="9" onclick="Display('9')">9</button>
+                <button id="plus" value="+" onclick="Display('+')">+</button>
+            </div>
+            <div class="row3">
+                <button id="four" value="4" onclick="Display('4')">4</button>
+                <button id="five" value="5" onclick="Display('5')">5</button>
+                <button id="six" value="6" onclick="Display('6')">6</button>
+                <button id="minus" value="-" onclick="Display('-')">-</button>
+            </div>
+            <div class="row4">
+                <button id="one" value="1" onclick="Display('1')">1</button>
+                <button id="two" value="2" onclick="Display('2')">2</button>
+                <button id="three" value="3" onclick="Display('3')">3</button>
+                <button id="multiply" value="*" onclick="Display('*')">*</button>
+            </div>
+            <div class="row5">
+                <button id="zero" value="0" onclick="Display('0')">0</button>
+                <button id="percent" value="%" onclick="Display('%')">%</button>
+                <button id="equal" value="=" class="equalto" onclick="evaluate()">=</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
