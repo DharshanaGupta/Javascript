@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Form validation</title>
+        <script src="../RegularExpression/regex.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form  action="../FormValidation/message.html">
+            <input id="name" placeholder="Enter your name" type="text" >
+            <label id="lbuser" style="color: red; visibility: hidden;">Invalid username / blank</label>
+            <br><br>
+            <input id="pwd" placeholder="Enter password" type="password" >
+            <label id="lbpwd" style="color: red; visibility: hidden;">Password too short</label>
+            <br>
+            <br>
+            <button type="button" onclick="validate()">Submit</button>
+        </form>
+    </body>
+</html>
