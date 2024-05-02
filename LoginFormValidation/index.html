@@ -31,13 +31,17 @@
             <br><br>
             <label for="mailid">Email</label>
             <input type="email" name="mailid" placeholder="Email" id="email">
+            <label id="lbmail" style="color:red; visibility: hidden;">Invalid Email</label>
             <br><br>
             <label for="number">Phone Number</label>
             <input type="number" name="number" placeholder="10-digit number" id="phone">
+            <label id="lbnumber" style="color:red; visibility: hidden;">Invalid mobile number</label>
             <br>
             <br>
             <label for="password">Password</label>
             <input type="password" name="password" placeholder="password" id="pwd">
+            <label id="lbpassword" style="color:red; visibility: hidden;">Invalid password</label>
+            <label id="lbpasswordlen" style="color:red; visibility: hidden;">Invalid password</label>
             <br>
             <br>
             <label for="gender" id="gender">Gender</label><br>
@@ -79,7 +83,7 @@
             <label for="photo" id="photo">Upload your Photo</label><br>
             <input type="file" name="photo">
             <br><br>
-            <input type="button" value="submit" onclick="DisplayDetails()" id="btn1" >
+            <input type="button" value="submit" onclick="validate()" id="btn1" >
             <input type="button" value="reset" onclick="Reset()">
 
         </form>
